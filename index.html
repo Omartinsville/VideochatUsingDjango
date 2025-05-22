@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VideoChat LMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-indigo-600">VideoChat LMS</h1>
+        <nav>
+          <a href="#features" class="text-gray-700 hover:text-indigo-600 mx-3">Features</a>
+          <a href="#demo" class="text-gray-700 hover:text-indigo-600 mx-3">Demo</a>
+          <a href="#contact" class="text-gray-700 hover:text-indigo-600 mx-3">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="bg-indigo-600 text-white py-16 text-center">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-4">Real-Time Video Chat for Students & Tutors</h2>
+        <p class="mb-6 text-lg">Join a room and start a secure, high-quality video session. Built with Django, Channels & WebRTC.</p>
+        <form action="/call/" method="get" class="flex justify-center">
+          <input
+            type="text"
+            name="room"
+            placeholder="Enter room name..."
+            required
+            class="rounded-l px-4 py-2 text-gray-800 focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="bg-white text-indigo-600 font-semibold px-6 py-2 rounded-r hover:bg-gray-100"
+          >
+            Join Room
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="features" class="py-16 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-8">Why Use VideoChat LMS?</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded shadow">
+            <h4 class="font-semibold text-xl mb-2">1-on-1 & Group Calls</h4>
+            <p>Supports both personal and group (mesh) video calls for flexible learning.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h4 class="font-semibold text-xl mb-2">WebRTC + WebSocket</h4>
+            <p>Built with Django Channels and WebRTC for real-time video and chat signaling.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h4 class="font-semibold text-xl mb-2">Mobile-Friendly</h4>
+            <p>Fully responsive layout using Tailwind CSS. Works smoothly on any device.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="bg-gray-100 py-16 text-center">
+      <h3 class="text-3xl font-bold mb-4">Try a Demo Call</h3>
+      <p class="mb-6">Open this page on two devices, enter the same room name, and test the video call.</p>
+      <form action="/call/" method="get" class="flex justify-center max-w-md mx-auto">
+        <input
+          type="text"
+          name="room"
+          placeholder="Enter demo room..."
+          required
+          class="rounded-l px-4 py-2 w-full text-gray-800 focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="bg-indigo-600 text-white px-6 py-2 rounded-r hover:bg-indigo-700"
+        >
+          Start Demo
+        </button>
+      </form>
+    </section>
+
+    <footer id="contact" class="bg-white py-10 text-center border-t">
+      <p class="text-sm text-gray-600">Built with ❤️ by Martins Oluwagbemiga Akindele | <a href="mailto:omartinsville106@gmail.com" class="text-indigo-600">Email</a></p>
+      <p class="mt-2 text-sm">
+        <a href="https://github.com/Omartinsville" class="text-indigo-600 hover:underline">GitHub</a> |
+        <a href="https://linkedin.com/in/martins-akindele" class="text-indigo-600 hover:underline">LinkedIn</a>
+      </p>
+    </footer>
+  </body>
+</html>
